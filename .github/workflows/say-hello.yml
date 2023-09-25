@@ -1,0 +1,9 @@
+on:
+  - pull_request
+
+jobs:
+  say-hello:
+    name: Say Hello
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Hello my fren"
