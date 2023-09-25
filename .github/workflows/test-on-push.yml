@@ -1,0 +1,10 @@
+on:
+  - push
+
+jobs:
+  tests:
+    name: Run tests for ${{ github.ref }} branch
+    runs-on: ubuntu-latest
+    steps:
+      - run: npm test
+  
